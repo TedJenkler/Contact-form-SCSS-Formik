@@ -50,15 +50,17 @@ function App() {
           </label>
           <div id="radio-group">Query Type *</div>
           <div className="radio-group">
-            <label>
-              <Field type="radio" name="type" value="General Enquiry" />
-              General Enquiry
-            </label>
-            <label>
-              <Field type="radio" name="type" value="Support Request" />
-              Support Request
-            </label>
-          </div>
+  <label htmlFor="general-enquiry">
+    <input type="radio" id="general-enquiry" name="type" value="General Enquiry" />
+    <span className="custom-radio"></span>
+    General Enquiry
+  </label>
+  <label htmlFor="support-request">
+    <input type="radio" id="support-request" name="type" value="Support Request" />
+    <span className="custom-radio"></span>
+    Support Request
+  </label>
+</div>
           <label className="textfield" htmlFor="message">
             Message *
             <Field
