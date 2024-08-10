@@ -17,8 +17,9 @@ function App() {
           alert(JSON.stringify(values, null, 2));
         }}
       >
-        <Form>
-          <div>
+        <Form className="form">
+          <h1>Contact Us</h1>
+          <div className="group1">
             <label htmlFor="firstName">
               First Name *
               <Field
@@ -58,7 +59,7 @@ function App() {
               Support Request
             </label>
           </div>
-          <label htmlFor="message">
+          <label className="textfield" htmlFor="message">
             Message *
             <Field
               as="textarea"
@@ -67,9 +68,9 @@ function App() {
               placeholder="Hello, I would like to know if you're able to build Shopify e-commerce sites. We're starting a business and we're going to use Shopify. But it would be great to work with an agency who specialises in working with it."
             />
           </label>
-          <label>
-            <Field type="checkbox" name="toggle" />
+          <label className="toggle">
             I consent to being contacted by the team *
+            <Field type="checkbox" name="toggle" />
           </label>
           <button type="submit">Submit</button>
         </Form>
